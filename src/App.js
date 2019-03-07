@@ -4,9 +4,12 @@ import {
   InstantSearch,
   SearchBox,
   connectHits,
-  Configure
+  Configure,
+  RefinementList,
+  Pagination,
+  Stats
 } from "react-instantsearch-dom";
-import StackGrid from "react-stack-grid";
+import logo from "./logo-algolia-nebula-blue-full.png";
 
 const searchClient = algoliasearch(
   "4GNBVCYURZ",
@@ -20,8 +23,53 @@ class App extends Component {
         <header className="App-header">
           <InstantSearch indexName="met_photos" searchClient={searchClient}>
             <Configure hitsPerPage={30} analytics={false} distinct />
-            <SearchBox />
-            <CustomHits />
+            <div
+              style={{
+                margin: "40px",
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+                alignItems: "center"
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "flex-start",
+                  alignItems: "center"
+                }}
+              >
+                <SearchBox />
+                <span style={{ marginLeft: "10px" }}>powered by</span>
+                <img
+                  style={{
+                    marginLeft: "10px",
+                    height: "20px"
+                  }}
+                  src={logo}
+                  alt={"powered by algolia"}
+                />
+              </div>
+              <span>
+                <Stats />
+              </span>
+            </div>
+            <div style={{ display: "flex" }}>
+              <div
+                style={{ marginLeft: "30px", width: "230px", flex: "0 0 auto" }}
+              >
+                <RefinementList
+                  operator={"and"}
+                  limit={40}
+                  attribute={"tags"}
+                />
+              </div>
+              <div>
+                <CustomHits />
+                <Pagination />
+              </div>
+            </div>
           </InstantSearch>
         </header>
       </div>
@@ -31,20 +79,35 @@ class App extends Component {
 
 const CustomHits = connectHits(({ hits }) => {
   return (
-    <StackGrid columnWidth={150} monitorImagesLoaded={true}>
+    <div
+      style={{
+        display: "flex",
+        margin: "0 30px",
+        justifyContent: "flex-end",
+        flexWrap: "wrap"
+      }}
+    >
       {hits.map(hit => {
         return (
-          <div key={hit.primaryImageSmall}>
+          <div key={hit.objectID} style={{ width: "170px", padding: "5px" }}>
             <img
-              style={{ width: "150px" }}
+              style={{ width: "160px" }}
               src={hit.primaryImageSmall}
               alt={hit.title}
             />
-            <div>{hit.title}</div>
+            <div style={{ fontSize: "12px" }}>{hit.artistDisplayName}</div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ fontSize: "12px" }}
+              href={hit.objectURL}
+            >
+              {hit.title}
+            </a>
           </div>
         );
       })}
-    </StackGrid>
+    </div>
   );
 });
 
