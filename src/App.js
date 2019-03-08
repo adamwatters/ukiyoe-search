@@ -26,11 +26,13 @@ class App extends Component {
             <Configure hitsPerPage={30} analytics={false} distinct />
             <div
               style={{
-                margin: "40px",
+                padding: "10px",
+                margin: "32px",
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "space-between",
-                alignItems: "center"
+                alignItems: "center",
+                backgroundColor: "#F2DABE"
               }}
             >
               <div
@@ -66,7 +68,12 @@ class App extends Component {
             </div>
             <div style={{ display: "flex" }}>
               <div
-                style={{ marginLeft: "30px", width: "230px", flex: "0 0 auto" }}
+                style={{
+                  backgroundColor: "#F2DABE",
+                  marginLeft: "30px",
+                  width: "230px",
+                  flex: "0 0 auto"
+                }}
               >
                 <RefinementList
                   operator={"and"}
@@ -106,9 +113,20 @@ const CustomHits = connectHits(({ hits }) => {
     >
       {hits.map(hit => {
         return (
-          <div key={hit.objectID} style={{ width: "170px", padding: "5px" }}>
+          <div
+            key={hit.objectID}
+            style={{
+              backgroundColor: "#F2DABE",
+              width: "170px",
+              padding: "5px",
+              margin: "5px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center"
+            }}
+          >
             <img
-              style={{ width: "160px" }}
+              style={{ width: "160px", flex: "0 0 auto" }}
               src={hit.primaryImageSmall}
               alt={hit.title}
             />

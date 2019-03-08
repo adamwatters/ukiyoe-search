@@ -1,3 +1,9 @@
+html {
+  background-image: url("https://images.metmuseum.org/CRDImages/as/original/DP121475.jpg");
+  background-size: 140%;
+  background-position: center -450px;
+}
+
 .ais-SearchBox-submit {
   display: none;
 }
