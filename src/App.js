@@ -9,6 +9,7 @@ import {
   Pagination,
   Stats
 } from "react-instantsearch-dom";
+import "./index.css";
 import logo from "./logo-algolia-nebula-blue-full.png";
 
 const searchClient = algoliasearch(
@@ -50,6 +51,14 @@ class App extends Component {
                   src={logo}
                   alt={"powered by algolia"}
                 />
+                <span style={{ marginLeft: "10px" }}>
+                  and made with{" "}
+                  <span role="img" aria-label="love">
+                    💚
+                  </span>{" "}
+                  by{" "}
+                  <a href="https://www.adamwatters.nyc/about">Adam Watters</a>
+                </span>
               </div>
               <span>
                 <Stats />
@@ -67,7 +76,15 @@ class App extends Component {
               </div>
               <div>
                 <CustomHits />
-                <Pagination />
+                <div
+                  style={{
+                    margin: "30px",
+                    display: "flex",
+                    justifyContent: "center"
+                  }}
+                >
+                  <Pagination />
+                </div>
               </div>
             </div>
           </InstantSearch>
