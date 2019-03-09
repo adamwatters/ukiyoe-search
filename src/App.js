@@ -10,7 +10,7 @@ import {
   Stats
 } from "react-instantsearch-dom";
 import "./index.css";
-import logo from "./logo-algolia-nebula-blue-full.png";
+import logo from "./algolia.svg";
 
 const searchClient = algoliasearch(
   "4GNBVCYURZ",
@@ -44,22 +44,21 @@ class App extends Component {
                   alignItems: "center"
                 }}
               >
-                <SearchBox />
-                <span style={{ marginLeft: "10px" }}>powered by</span>
-                <img
-                  style={{
-                    marginLeft: "10px",
-                    height: "20px"
-                  }}
-                  src={logo}
-                  alt={"powered by algolia"}
-                />
+                <div className={"main-search"} style={{ position: "relative" }}>
+                  <SearchBox />
+                  <img
+                    style={{
+                      right: "6px",
+                      top: "12px",
+                      height: "16px",
+                      position: "absolute"
+                    }}
+                    src={logo}
+                    alt={"powered by algolia"}
+                  />
+                </div>
                 <span style={{ marginLeft: "10px" }}>
-                  and made with{" "}
-                  <span role="img" aria-label="love">
-                    💚
-                  </span>{" "}
-                  by{" "}
+                  Made by{" "}
                   <a href="https://www.adamwatters.nyc/about">Adam Watters</a>
                 </span>
               </div>
@@ -80,8 +79,15 @@ class App extends Component {
                 }}
               >
                 <RefinementList
+                  searchable={true}
                   operator={"and"}
-                  limit={40}
+                  limit={20}
+                  attribute={"artistDisplayName"}
+                />
+                <RefinementList
+                  searchable={true}
+                  operator={"and"}
+                  limit={20}
                   attribute={"tags"}
                 />
               </div>
@@ -94,7 +100,21 @@ class App extends Component {
                     justifyContent: "center"
                   }}
                 >
-                  <Pagination />
+                  <div
+                    style={{
+                      backgroundColor: "#F2DABE",
+                      borderRadius: "10px",
+                      width: "100%",
+                      padding: "10px",
+                      margin: "5px",
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "center",
+                      alignItems: "center"
+                    }}
+                  >
+                    <Pagination />
+                  </div>
                 </div>
               </div>
             </div>
