@@ -32,7 +32,8 @@ class App extends Component {
                 flexDirection: "row",
                 justifyContent: "space-between",
                 alignItems: "center",
-                backgroundColor: "#F2DABE"
+                backgroundColor: "#F2DABE",
+                borderRadius: "10px"
               }}
             >
               <div
@@ -66,13 +67,16 @@ class App extends Component {
                 <Stats />
               </span>
             </div>
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex", alignItems: "flex-start" }}>
               <div
                 style={{
                   backgroundColor: "#F2DABE",
+                  padding: "16px",
                   marginLeft: "30px",
+                  marginTop: "5px",
                   width: "230px",
-                  flex: "0 0 auto"
+                  flex: "0 0 auto",
+                  borderRadius: "10px"
                 }}
               >
                 <RefinementList
@@ -117,28 +121,31 @@ const CustomHits = connectHits(({ hits }) => {
             key={hit.objectID}
             style={{
               backgroundColor: "#F2DABE",
-              width: "170px",
-              padding: "5px",
+              borderRadius: "10px",
+              width: "180px",
+              padding: "10px",
               margin: "5px",
               display: "flex",
               flexDirection: "column",
-              alignItems: "center"
+              alignItems: "stretch"
             }}
           >
             <img
-              style={{ width: "160px", flex: "0 0 auto" }}
+              style={{ width: "180px", flex: "0 0 auto", borderRadius: "10px" }}
               src={hit.primaryImageSmall}
               alt={hit.title}
             />
-            <div style={{ fontSize: "12px" }}>{hit.artistDisplayName}</div>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ fontSize: "12px" }}
-              href={hit.objectURL}
-            >
-              {hit.title}
-            </a>
+            <div>
+              <div style={{ fontSize: "12px" }}>{hit.artistDisplayName}</div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: "12px" }}
+                href={hit.objectURL}
+              >
+                {hit.title}
+              </a>
+            </div>
           </div>
         );
       })}

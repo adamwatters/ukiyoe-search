@@ -1,7 +1,9 @@
 html {
+  /* background-image: url("https://images.metmuseum.org/CRDImages/as/original/DP132830.jpg"); */
   background-image: url("https://images.metmuseum.org/CRDImages/as/original/DP121475.jpg");
-  background-size: 140%;
-  background-position: center -450px;
+  background-size: 130%;
+  background-position: center -300px;
+  font-family: "Roboto Slab", serif;
 }
 
 .ais-SearchBox-submit {
