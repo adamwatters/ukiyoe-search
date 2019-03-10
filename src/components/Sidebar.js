@@ -15,7 +15,7 @@ const Sidebar = () => {
         attribute={"artistDisplayName"}
       />
       <div className="sidebar-divider" />
-      <div className="sidebar-title">Subjects</div>
+      <div className="sidebar-title">Tags</div>
       <RefinementList
         showMore
         searchable={true}
