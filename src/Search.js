@@ -6,7 +6,7 @@ const Search = () => {
   return (
     <div className="search">
       <div className="main-search">
-        <SearchBox />
+        <SearchBox defaultRefinement={"views of mount fuji"} />
       </div>
       <Stats />
     </div>
