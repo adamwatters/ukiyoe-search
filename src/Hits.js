@@ -28,10 +28,12 @@ const CustomHits = connectHits(({ hits }) => {
                 <i className="fas fa-palette" />
                 {hit.title}
               </div>
-              <div className="hit-section">
-                <i className="fas fa-tags" />
-                {hit.tags.map(t => `${t}`).join(", ")}
-              </div>
+              {hit.tags.length && (
+                <div className="hit-section">
+                  <i className="fas fa-tags" />
+                  {hit.tags.map(t => `${t}`).join(", ")}
+                </div>
+              )}
               <a
                 className="hit-link"
                 target="_blank"
