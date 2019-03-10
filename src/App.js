@@ -2,15 +2,13 @@ import React, { Component } from "react";
 import algoliasearch from "algoliasearch/lite";
 import {
   InstantSearch,
-  SearchBox,
   Configure,
   RefinementList,
-  Pagination,
-  Stats
+  Pagination
 } from "react-instantsearch-dom";
+import Search from "./Search";
 import Hits from "./Hits";
 import "./app.css";
-import logo from "./algolia.svg";
 
 const searchClient = algoliasearch(
   "4GNBVCYURZ",
@@ -26,7 +24,7 @@ class App extends Component {
             <span role="img" aria-label="wave">
               🌊
             </span>
-            Ukiyo-e Search
+            {` Ukiyo-e Search`}
           </span>
           <span>About</span>
         </header>
@@ -55,17 +53,7 @@ class App extends Component {
               />
             </div>
             <div className="right">
-              <div className="search">
-                <div className="main-search">
-                  <SearchBox />
-                  <img
-                    className="search-logo"
-                    src={logo}
-                    alt={"powered by algolia"}
-                  />
-                </div>
-                <Stats />
-              </div>
+              <Search />
               <Hits />
               <div className="pagination">
                 <Pagination />
