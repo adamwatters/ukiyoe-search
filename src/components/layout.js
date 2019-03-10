@@ -11,7 +11,6 @@ import { Link } from "gatsby"
 import "../styles/index.css"
 
 const Layout = ({ children, path }) => {
-  console.log(path)
   return (
     <div className="app">
       <header className="header">
@@ -23,7 +22,7 @@ const Layout = ({ children, path }) => {
             {` Ukiyo-e Search`}
           </span>
         </Link>
-        {path === "/about" ? (
+        {path === "/about" || path === "/about/" ? (
           <Link to="/">Search</Link>
         ) : (
           <Link to="/about">About</Link>
