@@ -11,6 +11,7 @@ import { Link } from "gatsby"
 import "../styles/index.css"
 
 const Layout = ({ children, path }) => {
+  console.log(path)
   return (
     <div className="app">
       <header className="header">
