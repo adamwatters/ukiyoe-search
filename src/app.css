@@ -1,0 +1,174 @@
+html {
+  background-image: url("https://images.metmuseum.org/CRDImages/as/original/DP121475.jpg");
+  background-size: 130%;
+  color: #626365;
+  background-position: center -300px;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  max-width: 1300px;
+  padding: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .app {
+    padding: 12px;
+  }
+}
+
+.header {
+  font-size: 20px;
+  background-color: #f2dabe;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  padding: 10px 30px 10px 10px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-title {
+  font-size: 40px;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sidebar {
+  background-color: #f2dabe;
+  width: 300px;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  margin-right: 12px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.sidebar-title {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.sidebar-divider {
+  height: 2px;
+  background-color: #626365;
+  margin: 10px;
+}
+
+.ais-RefinementList-showMore {
+  outline: none;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  align-self: center;
+  position: relative;
+}
+
+.right {
+  flex: 1 1 auto;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2dabe;
+  border-radius: 10px;
+  padding: 8px;
+  position: relative;
+}
+
+.search-logo {
+  right: 6px;
+  top: 12px;
+  height: 16px;
+  position: absolute;
+}
+
+.ais-SearchBox-submit {
+  display: none;
+}
+
+.ais-SearchBox-reset {
+  display: none;
+}
+
+.ais-SearchBox-input {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 10px;
+}
+
+.main-search {
+  position: relative;
+}
+
+.main-search .ais-SearchBox-input {
+  width: 400px;
+  height: 38px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-search {
+    width: 100%;
+  }
+  .main-search .ais-SearchBox-input {
+    width: 100%;
+  }
+  .ais-Stats {
+    display: none;
+  }
+}
+
+.sidebar .ais-SearchBox-input {
+  height: 24px;
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 6px;
+}
+
+.pagination {
+  background-color: #f2dabe;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: cente;
+}
+
+.ais-Pagination-item {
+  padding: 4px;
+}
+
+.ais-Pagination-item a {
+  font-size: 20px;
+  color: #626365;
+  text-decoration: none;
+}
+
+.ais-Pagination-item.ais-Pagination-item--selected a {
+  color: #657b81;
+  text-decoration: underline;
+}
