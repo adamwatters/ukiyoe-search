@@ -10,6 +10,7 @@
   margin: 6px;
   border-radius: 10px;
   width: 180px;
+  max-width: 500px;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
@@ -19,7 +20,8 @@
 }
 
 .hit-image {
-  width: 100%;
-  flex: 0 0 auto;
-  border-radius: 10px;
+  height: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

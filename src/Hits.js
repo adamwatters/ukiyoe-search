@@ -9,10 +9,11 @@ const CustomHits = connectHits(({ hits }) => {
         console.log(hit);
         return (
           <div key={hit.objectID} className="hit">
-            <img
+            <div
               className="hit-image"
-              src={hit.primaryImageSmall}
-              alt={hit.title}
+              style={{
+                backgroundImage: `url('${hit.primaryImageSmall}')`
+              }}
             />
             <div>
               <div>{hit.artistDisplayName}</div>

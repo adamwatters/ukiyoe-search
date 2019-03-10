@@ -84,13 +84,6 @@ body {
   flex: 1 1 auto;
 }
 
-.sidebar .ais-SearchBox-input {
-  height: 24px;
-  font-size: 16px;
-  padding: 8px;
-  margin-bottom: 6px;
-}
-
 .pagination {
   background-color: var(--paper);
   border-radius: 10px;
