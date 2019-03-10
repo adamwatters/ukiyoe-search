@@ -1,0 +1,58 @@
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--paper);
+  border: var(--border);
+  border-radius: 10px;
+  padding: 8px;
+  margin: 0 5px 5px 5px;
+  position: relative;
+}
+
+.main-search {
+  position: relative;
+  width: 100%;
+}
+
+.main-search .ais-SearchBox-form {
+  width: 100%;
+  position: relative;
+}
+
+.main-search .ais-SearchBox-input {
+  width: 100%;
+  height: 38px;
+  font-size: 20px;
+  padding: 10px;
+  position: relative;
+}
+
+.main-search .ais-SearchBox-form::after {
+  content: "";
+  background: url("./algolia.svg");
+  display: block;
+  right: 6px;
+  top: 12px;
+  width: 120px;
+  height: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.ais-Stats {
+  display: none;
+  flex: 0 0 auto;
+  padding-left: 10px;
+}
+
+@media only screen and (min-width: 900px) {
+  .main-search .ais-SearchBox-form {
+    max-width: 400px;
+  }
+  .ais-Stats {
+    display: block;
+  }
+}

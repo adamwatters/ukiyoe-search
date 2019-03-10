@@ -1,0 +1,38 @@
+.sidebar {
+  background-color: var(--paper);
+  border: var(--border);
+  width: 300px;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  margin-right: 8px;
+  margin-left: 5px;
+  padding: 8px;
+  flex-direction: column;
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .sidebar {
+    display: flex;
+  }
+}
+
+.sidebar-title {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.sidebar-divider {
+  height: 2px;
+  background-color: #626365;
+  margin: 10px;
+}
+
+.ais-RefinementList-showMore {
+  outline: none;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  align-self: center;
+  position: relative;
+}

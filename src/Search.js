@@ -1,6 +1,6 @@
 import React from "react";
 import { SearchBox, Stats } from "react-instantsearch-dom";
-import logo from "./algolia.svg";
+import "./search.css";
 
 const Search = () => {
   return (

@@ -1,13 +1,9 @@
 import React, { Component } from "react";
 import algoliasearch from "algoliasearch/lite";
-import {
-  InstantSearch,
-  Configure,
-  RefinementList,
-  Pagination
-} from "react-instantsearch-dom";
+import { InstantSearch, Configure, Pagination } from "react-instantsearch-dom";
 import Search from "./Search";
 import Hits from "./Hits";
+import Sidebar from "./Sidebar";
 import "./app.css";
 
 const searchClient = algoliasearch(
@@ -31,27 +27,7 @@ class App extends Component {
         <InstantSearch indexName="met_photos" searchClient={searchClient}>
           <Configure hitsPerPage={20} analytics={false} distinct />
           <div className="main">
-            <div className="sidebar">
-              <div className="sidebar-title">Artists</div>
-              <RefinementList
-                showMore
-                searchable={true}
-                operator={"and"}
-                limit={10}
-                showMoreLimit={50}
-                attribute={"artistDisplayName"}
-              />
-              <div className="sidebar-divider" />
-              <div className="sidebar-title">Subjects</div>
-              <RefinementList
-                showMore
-                searchable={true}
-                operator={"and"}
-                limit={10}
-                showMoreLimit={50}
-                attribute={"tags"}
-              />
-            </div>
+            <Sidebar />
             <div className="right">
               <Search />
               <Hits />
