@@ -31,7 +31,7 @@
 
 .main-search .ais-SearchBox-form::after {
   content: "";
-  background: url("./algolia.svg");
+  background: url("../images/algolia.svg");
   display: block;
   right: 6px;
   top: 12px;

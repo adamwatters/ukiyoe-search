@@ -24,6 +24,11 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: var(--font);
+}
+
 .app {
   max-width: 1300px;
   padding: 12px;
@@ -109,4 +114,22 @@ body {
 .ais-Pagination-item.ais-Pagination-item--selected a {
   color: #657b81;
   text-decoration: underline;
+}
+
+.ais-Pagination--noRefinement:after {
+  content: "No Results - try another search";
+  font-size: 20px;
+  padding: 30px;
+  display: block;
+}
+
+.ais-Pagination-list--noRefinement {
+  display: none;
+}
+
+footer {
+  padding: 20px;
+  font-size: 16px;
+  color: blue;
+  text-shadow: var(--paper) 1px 0 4px;
 }

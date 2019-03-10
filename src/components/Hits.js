@@ -1,18 +1,17 @@
-import React from "react";
-import { connectHits } from "react-instantsearch-dom";
-import "./hits.css";
+import React from "react"
+import { connectHits } from "react-instantsearch-dom"
+import "../styles/hits.css"
 
 const CustomHits = connectHits(({ hits }) => {
   return (
     <div className="hits">
       {hits.map(hit => {
-        console.log(hit);
         return (
           <div key={hit.objectID} className="hit">
             <div
               className="hit-image"
               style={{
-                backgroundImage: `url('${hit.primaryImageSmall}')`
+                backgroundImage: `url('${hit.primaryImageSmall}')`,
               }}
             />
             <div>
@@ -28,7 +27,7 @@ const CustomHits = connectHits(({ hits }) => {
                 <i className="fas fa-palette" />
                 {hit.title}
               </div>
-              {hit.tags.length && (
+              {hit.tags.length > 0 && (
                 <div className="hit-section">
                   <i className="fas fa-tags" />
                   {hit.tags.map(t => `${t}`).join(", ")}
@@ -45,10 +44,10 @@ const CustomHits = connectHits(({ hits }) => {
               </a>
             </div>
           </div>
-        );
+        )
       })}
     </div>
-  );
-});
+  )
+})
 
-export default CustomHits;
+export default CustomHits

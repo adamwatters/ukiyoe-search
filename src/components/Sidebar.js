@@ -1,6 +1,6 @@
-import React from "react";
-import { RefinementList } from "react-instantsearch-dom";
-import "./sidebar.css";
+import React from "react"
+import { RefinementList } from "react-instantsearch-dom"
+import "../styles/sidebar.css"
 
 const Sidebar = () => {
   return (
@@ -25,7 +25,7 @@ const Sidebar = () => {
         attribute={"tags"}
       />
     </div>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar
