@@ -16,9 +16,30 @@ const CustomHits = connectHits(({ hits }) => {
               }}
             />
             <div>
-              <div>{hit.artistDisplayName}</div>
-              <a target="_blank" rel="noopener noreferrer" href={hit.objectURL}>
+              <div className="hit-section">
+                <i className="fas fa-user" />
+                <div>{hit.artistDisplayName}</div>
+              </div>
+              <div className="hit-section">
+                <i className="far fa-calendar-alt" />
+                {hit.objectDate}
+              </div>
+              <div className="hit-section">
+                <i className="fas fa-palette" />
                 {hit.title}
+              </div>
+              <div className="hit-section">
+                <i className="fas fa-tags" />
+                {hit.tags.map(t => `${t}`).join(", ")}
+              </div>
+              <a
+                className="hit-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href={hit.objectURL}
+              >
+                <i className="fas fa-link" />
+                More info
               </a>
             </div>
           </div>

@@ -6,7 +6,7 @@
 
 .hit {
   background-color: var(--paper);
-  padding: 6px;
+  padding: 6px 6px 20px 6px;
   margin: 6px;
   border-radius: 10px;
   width: 180px;
@@ -20,8 +20,34 @@
 }
 
 .hit-image {
-  height: 220px;
+  height: 180px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.hit-section {
+  font-size: 14px;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.fas,
+.far {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.hit-link {
+  text-decoration: none;
+  color: var(--font);
+  font-size: 14px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.hit-link:hover {
+  color: rgba(0, 0, 0, 0.9);
 }

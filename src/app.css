@@ -1,12 +1,14 @@
 :root {
   --border: 3px solid rgb(210, 134, 116, 0.6);
   --paper: rgba(247, 228, 204, 0.9);
+  --font: #626365;
+  --blue: rgb(108, 127, 134);
 }
 
 html {
   background-image: url("https://images.metmuseum.org/CRDImages/as/original/DP121475.jpg");
   background-size: 300%;
-  color: #626365;
+  color: var(--font);
   background-position: -200px -200px;
   font-family: "Roboto Slab", serif;
 }
@@ -100,7 +102,7 @@ body {
 
 .ais-Pagination-item a {
   font-size: 20px;
-  color: #626365;
+  color: var(--font);
   text-decoration: none;
 }
 
