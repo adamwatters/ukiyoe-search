@@ -54,7 +54,7 @@ class App extends Component {
             <NewTabLink href="https://www.algolia.com/">
               {`🔍 Algolia for search`}
             </NewTabLink>
-            <NewTabLink href="https://www.algolia.com/">
+            <NewTabLink href="https://www.gatsbyjs.org/">
               {`🤵 Gatsby for pages`}
             </NewTabLink>
           </div>

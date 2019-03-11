@@ -3,9 +3,7 @@ import { connectHits } from "react-instantsearch-dom"
 import "../styles/hits.css"
 
 const CustomHits = connectHits(({ hits }) => {
-  return hits.length === 0 ? (
-    <div className="hits-empty">No results, try another search</div>
-  ) : (
+  return (
     <div className="hits">
       {hits.map(hit => {
         return (

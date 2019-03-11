@@ -22,6 +22,9 @@ Tech:
 
 TODOS:
 
+- algolia stuff
+  - highlight matches
+  - make hit fields update search parameters on click
 - gatsby stuff
   - statically generated pages for each print from /data/edo-prints.json
   - seo for each page

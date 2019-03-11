@@ -13,7 +13,6 @@ const searchClient = algoliasearch(
 
 class App extends Component {
   render() {
-    console.log(this.props)
     return (
       <Layout path={this.props.location.pathname}>
         <InstantSearch indexName="met_photos" searchClient={searchClient}>
