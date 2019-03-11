@@ -1,6 +1,6 @@
 ## 🌊🌊 Ukiyo-e Search 🌊🌊
 
-> Explore the Metropolitian Museum of Art's Japanese Edo Period Woodblock Print Collection
+> Explore the Metropolitan Museum of Art's Japanese Edo Period Woodblock Print Collection
 
 https://ukiyo-e.netlify.com/
 
@@ -22,7 +22,9 @@ Tech:
 
 TODOS:
 
-- statically generated pages for each print from /data/edo-prints.json
+- gatsby stuff
+  - statically generated pages for each print from /data/edo-prints.json
+  - image optimizations?
 - tutorials
   - using the met open API
     - Open Access Announcement: https://www.metmuseum.org/blogs/now-at-the-met/2018/met-collection-api

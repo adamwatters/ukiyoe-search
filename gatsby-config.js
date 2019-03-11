@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Ukiyo-e - Japanese Woodblock Prints`,
-    description: `Search the Metropolitan Museaum of Art's collection of Japanese Woodblock Prints`,
+    description: `Japanese Woodblock Prints from the collection of the Metropolitan Museaum of Art`,
+    keywords: "ukiyo-e,japan,woodblock prints,edo period,metropolitan museum",
     author: `@adamwatters`,
   },
   plugins: [
