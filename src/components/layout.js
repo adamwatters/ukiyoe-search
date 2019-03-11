@@ -15,15 +15,10 @@ const Layout = ({ children, path }) => {
   return (
     <>
       <Helmet
-        title={data.site.siteMetadata.title}
         meta={[
           {
             name: "author",
-            content: "@adamwatters"
-          }
-          {
-            name: "title",
-            content: "Ukiyo-e - Japanese Woodblock Prints",
+            content: "@adamwatters",
           },
           {
             name: "description",
@@ -36,7 +31,9 @@ const Layout = ({ children, path }) => {
               "ukiyo-e,japan,woodblock prints,edo period,metropolitan museum",
           },
         ]}
-      />
+      >
+        <title>Ukiyo-e - Japanese Woodblock Prints</title>
+      </Helmet>
       <div className="app">
         <header className="header">
           <Link to="/">
