@@ -17,8 +17,24 @@ const Layout = ({ children, path }) => {
       <Helmet
         title={data.site.siteMetadata.title}
         meta={[
-          { name: "description", content: data.site.siteMetadata.description },
-          { name: "keywords", content: data.site.siteMetadata.keywords },
+          {
+            name: "author",
+            content: "@adamwatters"
+          }
+          {
+            name: "title",
+            content: "Ukiyo-e - Japanese Woodblock Prints",
+          },
+          {
+            name: "description",
+            content:
+              "Japanese Woodblock Prints from the collection of the Metropolitan Museaum of Art",
+          },
+          {
+            name: "keywords",
+            content:
+              "ukiyo-e,japan,woodblock prints,edo period,metropolitan museum",
+          },
         ]}
       />
       <div className="app">

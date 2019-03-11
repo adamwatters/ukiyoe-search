@@ -24,6 +24,7 @@ TODOS:
 
 - gatsby stuff
   - statically generated pages for each print from /data/edo-prints.json
+  - seo for each page
   - image optimizations?
 - tutorials
   - using the met open API
