@@ -14,7 +14,7 @@ const Sidebar = () => {
         showMoreLimit={50}
         attribute={"artistDisplayName"}
       />
-      <div className="sidebar-divider" />
+      <div className="divider" />
       <div className="sidebar-title">Tags</div>
       <RefinementList
         showMore

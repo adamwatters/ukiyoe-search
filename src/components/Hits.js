@@ -3,7 +3,9 @@ import { connectHits } from "react-instantsearch-dom"
 import "../styles/hits.css"
 
 const CustomHits = connectHits(({ hits }) => {
-  return (
+  return hits.length === 0 ? (
+    <div className="hits-empty">No results, try another search</div>
+  ) : (
     <div className="hits">
       {hits.map(hit => {
         return (
@@ -34,7 +36,7 @@ const CustomHits = connectHits(({ hits }) => {
                 </div>
               )}
               <a
-                className="hit-link"
+                className="hit-section"
                 target="_blank"
                 rel="noopener noreferrer"
                 href={hit.objectURL}

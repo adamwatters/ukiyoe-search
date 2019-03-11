@@ -4,6 +4,14 @@
   flex-wrap: wrap;
 }
 
+.hits-empty {
+  background-color: var(--paper);
+  border-radius: 10px;
+  border: var(--border);
+  margin: 6px;
+  padding: 30px;
+}
+
 .hit {
   background-color: var(--paper);
   padding: 6px 6px 20px 6px;
@@ -39,23 +47,12 @@
   padding-left: 34px;
 }
 
-.fas,
-.far {
+.hit-section .fas,
+.hit-section .far,
+.hit-section .fab {
   position: absolute;
   left: 5px;
   top: 5px;
-}
-
-.hit-link {
-  text-decoration: none;
-  color: var(--font);
-  font-size: 20px;
-  position: relative;
-  padding-left: 34px;
-}
-
-.hit-link:hover {
-  color: rgba(0, 0, 0, 0.9);
 }
 
 @media only screen and (min-width: 500px) {
@@ -67,8 +64,9 @@
     font-size: 14px;
     padding-left: 20px;
   }
-  .fas,
-  .far {
+  .hit-section .fas,
+  .hit-section .far,
+  .hit-section .fab {
     left: 0px;
   }
 }

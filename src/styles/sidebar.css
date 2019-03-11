@@ -29,12 +29,6 @@
   margin-bottom: 6px;
 }
 
-.sidebar-divider {
-  height: 2px;
-  background-color: #626365;
-  margin: 10px;
-}
-
 .ais-RefinementList-showMore {
   outline: none;
   margin-left: 20px;
@@ -42,4 +36,8 @@
   border-radius: 5px;
   align-self: center;
   position: relative;
+}
+
+.ais-RefinementList-showMore:hover {
+  color: var(--pink);
 }

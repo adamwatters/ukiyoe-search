@@ -23,9 +23,7 @@ class App extends Component {
             <div className="right">
               <Search />
               <Hits />
-              <div className="pagination">
-                <Pagination />
-              </div>
+              <Pagination />
             </div>
           </div>
         </InstantSearch>

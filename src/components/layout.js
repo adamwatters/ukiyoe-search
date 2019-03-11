@@ -32,7 +32,7 @@ const Layout = ({ children, path }) => {
           },
         ]}
       >
-        <title>Ukiyo-e - Japanese Woodblock Prints</title>
+        <title>Japanese Woodblock Prints</title>
       </Helmet>
       <div className="app">
         <header className="header">

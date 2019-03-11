@@ -1,8 +1,10 @@
 :root {
+  --border-color: rgb(210, 134, 116, 0.6);
   --border: 3px solid rgb(210, 134, 116, 0.6);
   --paper: rgba(247, 228, 204, 0.9);
   --font: #626365;
   --blue: rgb(108, 127, 134);
+  --pink: rgb(232, 123, 107);
 }
 
 html {
@@ -27,6 +29,10 @@ body {
 a {
   text-decoration: none;
   color: var(--font);
+}
+
+a:hover {
+  color: var(--pink);
 }
 
 .app {
@@ -72,6 +78,12 @@ a {
   align-items: flex-start;
 }
 
+.divider {
+  height: 3px;
+  background-color: var(--border-color);
+  margin: 10px;
+}
+
 .ais-SearchBox-submit {
   display: none;
 }
@@ -91,7 +103,7 @@ a {
   flex: 1 1 auto;
 }
 
-.pagination {
+.ais-Pagination {
   background-color: var(--paper);
   border-radius: 10px;
   display: flex;
@@ -116,14 +128,7 @@ a {
   text-decoration: underline;
 }
 
-.ais-Pagination--noRefinement:after {
-  content: "No Results - try another search";
-  font-size: 20px;
-  padding: 30px;
-  display: block;
-}
-
-.ais-Pagination-list--noRefinement {
+.ais-Pagination--noRefinement {
   display: none;
 }
 
