@@ -89,7 +89,7 @@ class App extends Component {
             <NewTabLink href="https://www.gatsbyjs.org/">
               {`🤵 Gatsby for pages`}
             </NewTabLink>
-            <NewTabLink href="https://www.gatsbyjs.org/">
+            <NewTabLink href="https://www.netlify.com/">
               {`🥅 Deployed to Netlify`}
             </NewTabLink>
           </div>
