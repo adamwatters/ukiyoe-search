@@ -38,6 +38,10 @@
   position: relative;
 }
 
-.ais-RefinementList-showMore:hover {
+.ais-RefinementList-showMore {
   color: var(--pink);
+}
+
+.ais-RefinementList-showMore:hover {
+  color: var(--darkpink);
 }
