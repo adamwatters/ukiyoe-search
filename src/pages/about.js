@@ -19,7 +19,7 @@ class App extends Component {
             <h1>about the art</h1>
             <p>
               {`Ukiyo-e is a genre of Japanese art that developed during the Edo
-              Period (1603–1868). I'm no historian... here are links to material from The Metropolitian Museum: `}
+              Period (1603–1868). I'm no historian, so here are links to material from The Metropolitian Museum: `}
               <NewTabLink href="https://www.metmuseum.org/toah/hd/plea/hd_plea.htm">
                 Art of the Pleasure Quarters and the Ukiyo-e Style
               </NewTabLink>
@@ -54,7 +54,7 @@ class App extends Component {
               {` has some cool stuff on their instagram.`}
             </p>
             <p>
-              {`If you found this site fun or useful, I'd love to hear from you! Seriously, I'm curious who you are and how you got here - `}
+              {`If you found this site fun or useful, I'd love to hear from you. Seriously, I'm curious who you are and how you got here! Make my day and email me at `}
               <NewTabLink href="mailto:adamwatters11@gmail.com">
                 adamwatters11@gmail.com
               </NewTabLink>
