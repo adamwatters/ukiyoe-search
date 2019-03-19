@@ -22,23 +22,25 @@ Tech:
 
 TODOS:
 
-- confused by json tranform error
 - algolia stuff
-  - highlight matches
-  - make hit fields update search parameters on click
+  [ ] highlight matches
+  [ ] make hit fields update search parameters on click
+  [ ] sync url with search state
 - gatsby stuff
-  - statically generated pages for each print from /data/edo-prints.json
-  - seo for each page
-  - image optimizations?
+  [x] statically generated pages for each print from /data/edo-prints.json
+  [ ] seo for each page
+  [ ] image optimizations?
+- netlify
+  [ ] build takes over an hour
 - tutorials
   - using the met open API
-    - Open Access Announcement: https://www.metmuseum.org/blogs/now-at-the-met/2018/met-collection-api
-    - API Announcement: https://www.metmuseum.org/blogs/now-at-the-met/2018/met-collection-api
-    - API Documentation: https://metmuseum.github.io/
+    [ ] Open Access Announcement: https://www.metmuseum.org/blogs/now-at-the-met/2018/met-collection-api
+    [ ] API Announcement: https://www.metmuseum.org/blogs/now-at-the-met/2018/met-collection-api
+    [ ] API Documentation: https://metmuseum.github.io/
   - basic search with algolia
-    - preparing and uploading data
-    - javascript implementation
+    [ ] preparing and uploading data
+    [ ] javascript implementation
   - react-instant-search with algolia
-    - styling widgets
-    - extending widgets
+    [ ] styling widgets
+    [ ] extending widgets
   - gatsby 4000 page site
