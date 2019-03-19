@@ -69,7 +69,7 @@ class App extends Component {
             <NewTabLink href="mailto:adamwatters11@gmail.com">
               {`📫 email me`}
             </NewTabLink>
-            <NewTabLink href="https://twitter.com/AdamWatters">
+            <NewTabLink href="https://twitter.com/adamwatters">
               {`🐥 maybe i'll start tweeting?`}
             </NewTabLink>
             <NewTabLink href="https://www.adamwatters.nyc/">
