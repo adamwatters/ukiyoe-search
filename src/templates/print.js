@@ -12,7 +12,7 @@ export default ({ data }) => {
           <img className="print-image" src={primaryImageSmall} alt={title} />
         </div>
         <div>
-          <div>{title}</div>
+          <h1>{title}</h1>
           <div>{artistDisplayName}</div>
           <div>{tags.join(", ")}</div>
         </div>
