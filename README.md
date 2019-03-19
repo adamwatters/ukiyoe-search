@@ -22,6 +22,7 @@ Tech:
 
 TODOS:
 
+- confused by json tranform error
 - algolia stuff
   - highlight matches
   - make hit fields update search parameters on click

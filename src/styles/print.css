@@ -1,0 +1,19 @@
+.print {
+  background-color: var(--paper);
+  border: var(--border);
+  border-radius: 10px;
+  padding: 10px 30px 10px 10px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 5px;
+  margin-left: 5px;
+  flex-wrap: wrap;
+}
+
+.print-image {
+  margin-right: 32px;
+  height: 500px;
+}

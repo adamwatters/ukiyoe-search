@@ -1,5 +1,6 @@
 import React from "react"
 import { connectHits } from "react-instantsearch-dom"
+import { Link } from "gatsby"
 import "../styles/hits.css"
 
 const CustomHits = connectHits(({ hits }) => {
@@ -33,15 +34,10 @@ const CustomHits = connectHits(({ hits }) => {
                   {hit.tags.map(t => `${t}`).join(", ")}
                 </div>
               )}
-              <a
-                className="hit-section"
-                target="_blank"
-                rel="noopener noreferrer"
-                href={hit.objectURL}
-              >
+              <Link className="hit-section" to={`/${hit.objectID}`}>
                 <i className="fas fa-link" />
                 More info
-              </a>
+              </Link>
             </div>
           </div>
         )
