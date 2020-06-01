@@ -72,8 +72,8 @@ class App extends Component {
             <NewTabLink href="https://twitter.com/adamwatters">
               {`🐥 maybe i'll start tweeting?`}
             </NewTabLink>
-            <NewTabLink href="https://www.adamwatters.nyc/">
-              {`🏠 adamwatters.nyc`}
+            <NewTabLink href="https://adamwatters.onuniverse.com/">
+              {`🏠 adamwatters.onuniverse.com`}
             </NewTabLink>
             <div className="divider" />
             <h1>about this site</h1>
